@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background: url('field3.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 950px;
+    height: 550px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.container .handles {
+    width: 200px;
+    height: 430px;
+    background: #800000;
+    margin: 0 9%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 4%;
+    z-index: -1;
+    box-shadow: 10px 15px 15px #000;
+}
+
+.container .handles .curve {
+    width: 100%;
+    height: 90%;
+    background: #dc143c;
+    border-radius: 75px;
+}
+
+.container .L1R1 {
+    width: 125px;
+    height: 140px;
+    background-color: #000;
+    border-radius: 45px;
+    border: 2px solid #696969;
+}
+
+.container .L1R1:hover {
+    background-color: #1e90ff;
+    border-color: #1e90ff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.container #L1 {
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    z-index: -1;
+    
+}
+
+.container #R1 {
+    position: absolute;
+    top: 12%;
+    right: 15%;
+    z-index: -1;
+}
+
+.container #handle1 {
+    transform: rotate(9deg);
+}
+
+.container #handle2 {
+    transform: rotate(-9deg);
+}
+
+.pad-body {
+    width: 79%;
+    height: 250px;
+    background-color: #dc143c;
+    position: absolute;
+    top: 15%;
+    left: 10.5%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 100px;
+}
+
+.pad-body .main-buttons {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #dc143c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    box-shadow: 2px 3px 25px #000;
+}
+
+.pad-body .main-buttons .btnn {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.screen {
+    width: 300px;
+    height: 140px;
+    background: url('screen.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -5px;
+    left: 224px;
+    border-radius: 13px;
+    box-shadow: 2px 3px 10px #000;
+}
+
+.screen:hover {
+    background: url('icecream1.JPG') no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.analogs {
+    width: 450px;
+    height: 150px;
+    background: transparent;
+    position: absolute;
+    left: 150px;
+    bottom: -50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.analogs .circles {
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.analogs .circles .circle1 {
+    width: 100%;
+    height: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.analogs .circles .circle2 {
+    width: 80%;
+    height: 10px;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.analogs .circles .circle3 {
+    width: 60%;
+    height: 10px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-analog, .right-analog {
+    width: 130px;
+    height: 130px;
+    background: #dc143c;
+    border-radius: 50%;
+    margin: 0 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 25px #000;
+}
+
+.pad-body .analogs .inner {
+    width: 70%;
+    height: 70%;
+    background-color: #696969;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 10px #000;
+}
+
+.pad-body .analogs .inner .inner-inner {
+    width: 70%;
+    height: 70%;
+    background-color: #000;
+    border: 2px solid #c0c0c0;
+    border-radius: 50%;
+    box-shadow: 2px 3px 25px #000;
+}
+
+.pad-body .analogs .inner .inner-inner:hover {
+    background-color: #1e90ff;
+    border: #1e90ff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.pad-body .box {
+    width: 400px;
+    height: 80px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 23%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.pad-body .box .options-btn {
+    width: 25px;
+    height: 45px;
+    background: #000;
+    margin: 0 8px;
+    border-radius: 50px;
+    box-shadow: 1px 2px 7px #000;
+}
+
+.pad-body .box .options-btn:hover {
+    background-color: #1e90ff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.pad-body .box p.share {
+    font-size: 11px;
+    font-family: Arial;
+    font-weight: 500;
+    color: #c0c0c0;
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 3px;
+    left: -1px;
+    text-transform: uppercase;
+}
+
+.pad-body .box p.options {
+    font-size: 11px;
+    font-family: Arial;
+    font-weight: 500;
+    color: #c0c0c0;
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 3px;
+    right: -9px;
+    text-transform: uppercase;
+}
+
+.pad-body #main1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pad-body #main1 .left-inner {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: #dc143c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pad-body #main1 i {
+    position: absolute;
+    color: #800000;
+}
+
+.pad-body #main1 .up {
+    position: absolute;
+    top: 0;
+}
+
+.pad-body #main1 .left {
+    position: absolute;
+    left: 0;
+}
+
+.pad-body #main1 .right {
+    position: absolute;
+    right: 0;
+}
+
+.pad-body #main1 .down {
+    position: absolute;
+    bottom: 0;
+}
+
+.pad-body #main1 .left-inner .directions {
+    width: 40px;
+    height: 95%;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 1px 2px 7px #000;
+}
+
+.pad-body #main1 .left-inner .directions:hover {
+    background-color: #1e90ff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.pad-body #main1 .left-inner .directions .sep {
+    width: 100%;
+    height: 68px;
+    border-radius: 10px;
+}
+
+.pad-body #main1 .left-inner .directions #sep1 {
+    background-color: #000;
+}
+
+.pad-body #main1 .left-inner .directions #sep1:hover {
+    background-color: #1e90ff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.pad-body #main1 .left-inner .directions #sep2 {
+    background-color: #000;
+}
+
+.pad-body #main1 .left-inner .directions #sep2:hover {
+    background-color: #1e90ff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.pad-body #main1 .left-inner .directions2 {
+    width: 75%;
+    height: 40px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.pad-body #main1 .left-inner .directions2:hover {
+    background-color: #000;
+}
+
+.pad-body #main1 .left-inner .directions2 .sepp {
+    width: 60px;
+    height: 100%;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.pad-body #main1 .left-inner .directions2 #sepp1 {
+    background-color: #000;
+}
+
+.pad-body #main1 .left-inner .directions2 #sepp1:hover {
+    background-color: #1e90ff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.pad-body #main1 .left-inner .directions2 #sepp2 {
+    background-color: #000;
+    position: absolute;
+    right: 0;
+}
+
+.pad-body #main1 .left-inner .directions2 #sepp2:hover {
+    background-color: #1e90ff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.pad-body #main1 .left-inner .x {
+    width: 10px;
+    height: 100px;
+    background-color: #dc143c;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pad-body #main1 .left-inner #x1 {
+    transform: rotate(45deg);
+}
+
+.pad-body #main1 .left-inner #x2 {
+    background-color: #dc143c;
+    transform: rotate(-45deg);
+}
+
+.pad-body .logo {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: url('logo1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 32px;
+    box-shadow: 1px 2px 7px #000;
+
+}
+
+.pad-body .exit-container {
+    width: 100px;
+    height: 25px;
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.pad-body .exit-container p {
+    font-size: 10px;
+    font-family: Arial;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #c0c0c0;;
+    text-transform: uppercase;
+    position: absolute;
+    left: 15px;
+    margin-top: 3px;
+}
+
+.pad-body .exit-container .dotted {
+    width: 10px;
+    height: 10px;
+    border: 2px dotted #c0c0c0;;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    margin-top: 3px;
+}
+
+.pad-body .exit {
+    width: 100%;
+    height: 100px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    bottom: -90px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 1px 2px 7px #000;
+    z-index: 1;
+}
+
+#btnn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 10px #000;
+}
+
+#btnn1:hover {
+    background: #9370db;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#btnn1 i {
+    font-size: 36px;
+    color: #9370db;
+    margin-right: 2px;
+}
+
+#btnn1 i:hover {
+    color: #000;
+}
+
+#btnn2 {
+    position: absolute;
+    top: 10px;
+    left: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 10px #000;
+}
+
+#btnn2:hover {
+    background: #3cb371;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#btnn2 i {
+    font-size: 42px;
+    color: #3cb371;
+    margin-bottom: 5px;
+    margin-right: 2px;
+}
+
+#btnn2 i:hover {
+    color: #000;
+}
+
+#btnn3 {
+    position: absolute;
+    bottom: 10px;
+    left: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 10px #000;
+}
+
+#btnn3:hover {
+    background: #6495ed;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#btnn3 i {
+    font-size: 55px;
+    color: #6495ed;
+}
+
+#btnn3 i:hover {
+    color: #000;
+}
+
+#btnn4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 10px #000;
+}
+
+#btnn4:hover {
+    background: #ff69b4;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#btnn4 i {
+    font-size: 36px;
+    color: #ff69b4;
+}
+
+#btnn4 i:hover {
+    color: #000;
+}
+
+.resize {
+    font-size: 10px;
+}
