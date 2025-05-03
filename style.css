@@ -138,9 +138,10 @@
     background: url('./public/images/EPL-Players.webp') no-repeat;
     background-position: center;
     background-size: cover;
-    transition: all 1s ease-in-out;
+    transition: all .3s ease-in-out;
     transform: scale(1);
     cursor: pointer;
+    z-index: 1;
 }
 
 .analogs {
@@ -494,29 +495,28 @@
 }
 
 #btnn1 {
+    font-size: 36px;
+    color: #9370db;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 3px 10px #000;
+    box-shadow: 0 0 10px #000;
+    transition: .2s ease-in-out;
 }
 
 #btnn1:hover {
     background: #9370db;
+    color: #000;
     cursor: pointer;
-    transition: .2s ease-in-out;
 }
 
 #btnn1 i {
-    font-size: 36px;
-    color: #9370db;
-    margin-right: 2px;
-}
-
-#btnn1 i:hover {
-    color: #000;
+    margin-right: 0.15rem;
 }
 
 #btnn2 {
+    font-size: 42px;
+    color: #3cb371;
     position: absolute;
     top: 10px;
     left: 63px;
@@ -528,22 +528,19 @@
 
 #btnn2:hover {
     background: #3cb371;
+    color: #000;
     cursor: pointer;
     transition: .2s ease-in-out;
 }
 
 #btnn2 i {
-    font-size: 42px;
-    color: #3cb371;
     margin-bottom: 5px;
     margin-right: 2px;
 }
 
-#btnn2 i:hover {
-    color: #000;
-}
-
 #btnn3 {
+    font-size: 55px;
+    color: #6495ed;
     position: absolute;
     bottom: 10px;
     left: 63px;
@@ -555,20 +552,14 @@
 
 #btnn3:hover {
     background: #6495ed;
+    color: #000;
     cursor: pointer;
     transition: .2s ease-in-out;
 }
 
-#btnn3 i {
-    font-size: 55px;
-    color: #6495ed;
-}
-
-#btnn3 i:hover {
-    color: #000;
-}
-
 #btnn4 {
+    font-size: 36px;
+    color: #ff69b4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -577,17 +568,9 @@
 
 #btnn4:hover {
     background: #ff69b4;
+    color: #000;
     cursor: pointer;
     transition: .2s ease-in-out;
-}
-
-#btnn4 i {
-    font-size: 36px;
-    color: #ff69b4;
-}
-
-#btnn4 i:hover {
-    color: #000;
 }
 
 .resize {
