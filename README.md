@@ -8,6 +8,6 @@ For now, it was built with only HTML and CSS.
 
 ## Future Plans
 
-Subsequently, i will refine it to have other amazing features and functionalities using more advanced languages and frameworks.  
+Subsequently, it'll be modified to have other amazing features and functionalities using more advanced languages and frameworks.  
 
 Expect more from this project. Cheers!!!
