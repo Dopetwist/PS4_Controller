@@ -1,4 +1,4 @@
-## 🎮 PS4 Game Console
+# PS4 Game Console 🎮
 
 This is a project i built back in 2023 when i was learning how to code.
 
